@@ -71,8 +71,8 @@ abstract contract Ownable is Context {
     }
 }
 
-contract SuperBluestarToken is ERC20, Ownable {
-    constructor(uint256 initialSupply) ERC20("SuperBluestarToken", "SBT") Ownable() {
+contract MVPToken is ERC20, Ownable {
+    constructor(uint256 initialSupply) ERC20("MVPToken", "SBT") Ownable() {
         _mint(msg.sender, initialSupply);
     }
 

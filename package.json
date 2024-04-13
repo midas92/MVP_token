@@ -1,5 +1,5 @@
 {
-  "name": "SuperBluestarToken",
+  "name": "MVPToken",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SuperBluestar/SuperBluestarToken.git"
+    "url": "git+https://github.com/SuperBluestar/MVPToken.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SuperBluestar/SuperBluestarToken/issues"
+    "url": "https://github.com/SuperBluestar/MVPToken/issues"
   },
-  "homepage": "https://github.com/SuperBluestar/SuperBluestarToken#readme",
+  "homepage": "https://github.com/SuperBluestar/MVPToken#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-truffle5": "^2.0.2",
     "@nomiclabs/hardhat-web3": "^2.0.0",

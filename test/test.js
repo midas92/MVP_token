@@ -1,25 +1,25 @@
 const { expect } = require("chai");
 const { artifacts, web3 } = require("hardhat");
-const SuperBluestarToken = artifacts.require("SuperBluestarToken");
+const MVPToken = artifacts.require("MVPToken");
 
-describe("SuperBluestarToken contract | Testing by chai", function () {
+describe("MVPToken contract | Testing by chai", function () {
     let SBToken;
     let minter, addr1, addr2, addrs;
 
     const initialTotalSupply = 10**10;
     beforeEach(async function () {
         // Get the ContractFactory and Signers here.
-        // SBT = await ethers.getContractFactory("SuperBluestarToken");
+        // SBT = await ethers.getContractFactory("MVPToken");
         [minter, addr1, addr2, addrs] = await web3.eth.getAccounts();
 
         // To deploy our contract, we just have to call Token.deploy() and await
         // for it to be deployed(), which happens once its transaction has been
         // mined.
-        SBToken = await SuperBluestarToken.new(initialTotalSupply);
+        SBToken = await MVPToken.new(initialTotalSupply);
     });
     describe("Deployment", function () {
         it("Should have right token name and symbol", async function () {
-            expect(await SBToken.name()).to.equal("SuperBluestarToken");
+            expect(await SBToken.name()).to.equal("MVPToken");
             expect(await SBToken.symbol()).to.equal("SBT");
         });
         it("Should have right initial total number of tokens", async function () {
